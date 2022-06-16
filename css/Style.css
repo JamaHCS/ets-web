@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'core sans';
+  src: url('./../assets/core-sans.otf');
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;
+
+  padding: 0px;
+  margin: 0px;
+
+  --color-border: #0000001a;
+  --color-text-secondary: rgb(88, 102, 126);
+  --color-primary: rgb(56, 97, 251);
+  --padding: 13vw;
+}
+
+header {
+  background: #f4f5f7;
+  min-height: 50px;
+}
+
+header div {
+  padding: 0.5rem var(--padding);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  font-size: 2;
+}
+
+.navbar img{
+  height:40px;
+}
+.navbar span {
+  font-family: Inter;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.navbar nav {
+  margin-left: 2rem;
+}
+
+header li{
+  display:inline-block;
+  margin-right: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li span{
+  color: var(--color-primary);
+  margin-left: 5px;
+}
