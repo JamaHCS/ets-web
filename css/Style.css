@@ -24,17 +24,38 @@ header div {
   padding: 0.5rem var(--padding);
   border-bottom: 1px solid var(--color-border);
 }
+.button {
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: rgb(56, 97, 251);
+  color: white;
+  font-family: Inter;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(53, 91, 231);
+}
 
 .navbar{
   display: flex;
   align-items: center;
   font-size: 2;
 }
+.logo {
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+}
 
-.navbar img{
+.logo img{
   height:40px;
 }
-.navbar span {
+
+.logo span {
   font-family: Inter;
   font-weight: 600;
   margin-left: 0.5rem;
@@ -60,4 +81,157 @@ header ul {
 header li span{
   color: var(--color-primary);
   margin-left: 5px;
+}
+
+main {
+  padding: 2rem var(--padding);
+  min-height: 100vh;
+}
+
+table {
+  border-top: solid 1px var(--color-border);
+  border-bottom: solid 1px var(--color-border);
+  width:100%;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1.5rem; 
+  padding-bottom: 1.5rem 
+}
+
+table tbody tr {
+  border-top: solid 1px var(--color-border);
+  padding: 4rem 0
+}
+
+table tbody td {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+table img {
+  height: 24px
+}
+
+tbody td {
+    border-top: solid 1px var(--color-border);
+}
+.symbol {
+  font-weight: 600;
+  padding-top: 1.5rem 
+}
+
+.symbol div {
+  display:flex;
+  align-items: center;
+}
+
+.symbol div * {
+  margin-right: 6px;
+}
+
+.symbol span:last-of-type{
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.volume div{
+  display: flex;
+  flex-direction: column;
+}
+
+.volume div span:last-of-type {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.newsletter {
+  background-color: #F8FAFD;
+  padding: 4rem var(--padding);
+  min-height: 460px;
+  display: flex;
+}
+
+.newsletter div {
+  width:50%
+}
+
+.newsletter h4 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem
+}
+
+.newsletter h4 span {
+  font-weight: 600;
+}
+
+.newsletter p {
+  color: var(--color-text-secondary);
+}
+
+footer {
+  display: flex;
+  padding: 2rem 4rem;
+  min-height: 30rem;
+  width: calc(100% - 8rem)
+}
+
+footer a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+footer div {
+  border-bottom: solid 1px var(--color-border);
+  margin-bottom: 1rem;
+}
+
+footer div:first-of-type {
+  /* border: solid 1px red; */
+  width: 50%;
+}
+
+footer .logo {
+  height: 100%;
+  align-items: flex-start
+}
+
+footer .copyright{
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+footer div:last-of-type {
+  /* border: solid 1px red; */
+  width: 50%;
+  display: flex;
+}
+
+.footer-ul {
+  list-style: none;
+}
+
+.footer-ul li {
+  margin-bottom: 1.1rem;
+}
+
+.footer-ul li:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.footer-ul li:first-of-type a {
+  color: #000;
+  font-size: 1.1rem;
 }
