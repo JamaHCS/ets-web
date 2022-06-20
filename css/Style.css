@@ -24,6 +24,20 @@ header div {
   padding: 0.5rem var(--padding);
   border-bottom: 1px solid var(--color-border);
 }
+
+.img-chart {
+  min-height: 40px;
+}
+
+.color-red {
+  color: #ea3943;
+}
+
+.color-green{
+  color: #16c784;
+}
+
+
 .button {
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
