@@ -9,7 +9,7 @@ const getTemplate = (currencie) => {
         <td>${currencie.cmc_rank}</td>
         <td class="symbol">
         <div>
-            <img src="./assets/${currencie.img}" alt="" srcset="">
+            <img src="./assets/${currencie.img}" alt="Currencie" srcset="" height="24" width="24">
             <span>${currencie.name}</span>
             <span>${currencie.symbol}</span>
         </div>
@@ -25,7 +25,7 @@ const getTemplate = (currencie) => {
         </div>
         </td>
         <td>${new Intl.NumberFormat().format(currencie.total_supply)} ${currencie.symbol}</td>
-        <td><img class="img-chart" src="./assets/chart.jpg" /></td>
+        <td><img class="img-chart" src="./assets/chart.jpg" alt="chart" width="100" height="40" /></td>
     </tr>
     `;
 }
