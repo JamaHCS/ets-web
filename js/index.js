@@ -9,7 +9,7 @@ const getTemplate = (currencie) => {
         <td>${currencie.cmc_rank}</td>
         <td class="symbol">
         <div>
-            <img src="./assets/bitcoin.webp" alt="" srcset="">
+            <img src="./assets/${currencie.img}" alt="" srcset="">
             <span>${currencie.name}</span>
             <span>${currencie.symbol}</span>
         </div>
