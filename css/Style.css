@@ -140,12 +140,15 @@ header li span{
 main {
   padding: 2rem var(--padding);
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: scroll;
 }
 
 table {
   border-top: solid 1px var(--color-border);
   border-bottom: solid 1px var(--color-border);
   width:100%;
+  overflow-x: auto;
 }
 
 table th,
@@ -231,7 +234,7 @@ footer {
   display: flex;
   padding: 2rem 4rem;
   min-height: 30rem;
-  width: calc(100% - 8rem)
+  width: calc(100% - 8rem);
 }
 
 footer a:-webkit-any-link {
@@ -326,4 +329,33 @@ footer div:last-of-type {
 .footer-ul li:first-of-type a {
   color: #000;
   font-size: 1.1rem;
+}
+
+
+@media (max-width: 1160px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .newsletter img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer div:last-of-type{
+    flex-direction: column;
+  }
+  .footer-ul li {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
