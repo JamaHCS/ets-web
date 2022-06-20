@@ -3,6 +3,8 @@
   src: url('./../assets/core-sans.otf');
 }
 
+
+
 body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;
 
@@ -14,6 +16,44 @@ body {
   --color-primary: rgb(56, 97, 251);
   --padding: 13vw;
 }
+
+
+body {
+    overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    /*display: none; */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px #8f8f8f;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
+
+*::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 8px;
+}
+
+
+
 
 header {
   background: #f4f5f7;
@@ -199,10 +239,48 @@ footer a:-webkit-any-link {
     text-decoration: none;
 }
 
-footer a{
+.news {
+  padding: 2rem var(--padding);
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.news article {
+  background: #eaebec;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+
+  min-height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.news article span {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.news article img {
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+
+}
+
+footer a,
+a{
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-text-secondary);
+  text-decoration: none;
 }
 
 footer div {
